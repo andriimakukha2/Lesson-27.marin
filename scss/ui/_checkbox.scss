@@ -1,0 +1,39 @@
+.checkbox {
+  cursor: pointer;
+  &__label {
+    font-size: 12px;
+    line-height: 2.5;
+    color: var(--color-main);
+    position: relative;
+    padding-left: 30px;
+
+    &:before {
+      content:'';
+      display: block;
+      width: 15px;
+      height: 15px;
+      border: 1px solid var(--color-main);
+      background: #fff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      box-sizing: border-box;
+    }
+    &:after {
+      content:'';
+      display: block;
+      width: 11px;
+      height: 11px;
+      background: url('../img/sort-down.svg') center / contain;
+      //background: var(--color-main);
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      opacity: 0;
+      transition: .3s;
+    }
+  }
+  &__input:checked ~ &__label:after {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,36 @@
+.offer {
+  padding-top: 240px;
+  padding-bottom: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  color: var(--color-white);
+  background: url('../img/offer-bg.webp') center top / cover no-repeat #989892;
+
+  &__title {
+    max-width: 454px;
+    font-size: 48px;
+    margin: 0;
+  }
+
+  &__desc {
+    font-size: 24px;
+    max-width: 300px;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1450px) {
+    padding-bottom: 160px;
+  }
+
+  @media screen and (max-width: 850px) {
+    padding-top: 180px;
+    padding-bottom: 120px;
+    gap: 30px;
+    &__title {
+      max-width: 340px;
+      font-size: 36px;
+    }
+  }
+}
+

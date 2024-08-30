@@ -1,0 +1,35 @@
+@import "normalize";
+@import 'fonts';
+@import "vars";
+@import "global";
+@import "slider";
+
+@import "ui/btn";
+@import "ui/field";
+@import "ui/checkbox";
+
+@import "common/social";
+@import "common/header";
+@import "common/nav";
+@import "common/footer";
+@import "common/logo";
+
+@import "index/offer";
+@import "index/services";
+@import "index/contacts";
+@import "index/map";
+@import "index/faq";
+
+
+.running-row {
+  background: cadetblue;
+  font-size: 24px;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+
+  &__inner {
+    display: flex;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,120 @@
+.nav {
+  display: flex;
+  align-items: center;
+  &__list {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    font-size: 18px;
+    color: var(--color-light);
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+    position: relative;
+
+    &:before {
+      content:'';
+      width: 100%;
+      height: 2px;
+      background: currentColor;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      scale: 0 1;
+      transition: .3s;
+    }
+
+    &:hover {
+      opacity: .5;
+
+      &:before {
+        scale: .5 1;
+      }
+    }
+
+    &.--active {
+      color: var(--color-main);
+      &:before {
+        scale: 1;
+      }
+    }
+  }
+
+  &__checkbox-hidden {
+    visibility: hidden;
+    opacity: 0;
+    scale: 0;
+    pointer-events: none;
+  }
+
+  &__toggler {
+    display: none;
+  }
+
+  @media screen and (max-width: 750px) {
+    &__toggler {
+      display: block;
+      position: relative;
+      width: 45px;
+      height: 30px;
+      cursor: pointer;
+    }
+    &__toggler-line {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--color-light);
+      transition: .5s;
+
+      &:nth-child(2){
+        top: 50%;
+        translate: 0 -50%;
+      }
+      &:nth-child(3){
+        top: 100%;
+        translate: 0 -100%;
+      }
+    }
+
+    &__list {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vw;
+      flex-direction: column;
+      align-items: center;
+      padding: 120px 40px 40px;
+      gap: 25px;
+      background: var(--color-white);
+      transition: .5s;
+      translate: 0 -250%;
+      box-sizing: border-box;
+    }
+
+    &__checkbox-hidden:checked ~ &__toggler &__toggler-line {
+      top: 50% !important;
+      left: 50%;
+      translate: -50% -50% !important;
+      rotate: 45deg;
+
+      &:nth-child(3){
+        rotate: -225deg;
+      }
+    }
+    &__checkbox-hidden:checked ~ &__list {
+      translate: 0 0;
+
+    }
+  }
+
+
+}

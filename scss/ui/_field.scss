@@ -1,0 +1,82 @@
+.field {
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 18px;
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 9px 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+  }
+
+  &__placeholder {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    transition: .3s;
+  }
+
+  &:focus-within &__placeholder,
+  &--filled &__placeholder {
+      top: 0;
+      translate: 0 -100%;
+      font-size: 12px;
+  }
+
+  &__error {
+    color: #ff0000;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+  }
+
+  &--error &__input {
+    border-color: #ff0000;
+  }
+  &--error &__error {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  &:focus-within &__error {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &--select &__input  {
+    appearance: none;
+    padding-right: 50px;
+  }
+  &--select {
+    &:before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url('../img/sort-down.svg') center / contain no-repeat;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      translate: 0 -50%;
+      transition: .3s;
+    }
+
+    &:focus-within:before {
+      scale: 1 -1;
+    }
+  }
+
+  &--textarea &__input {
+    resize: none;
+    height: 100%;
+    min-height: 150px;
+  }
+}

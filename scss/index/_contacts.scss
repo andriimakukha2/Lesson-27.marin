@@ -1,0 +1,54 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__title {
+    text-align: center;
+    font-size: 48px;
+    margin: 0 0 10px;
+  }
+
+  &__form {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    border: none;
+
+    &--sale {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: unset;
+      max-width: 100%;
+
+      .btn {
+        max-width: 100%;
+      }
+    }
+
+    .field {
+      &--big {
+        grid-column: -1 / -2;
+        grid-row: 1 / -1;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: unset;
+      .field {
+        &--big {
+          grid-column: auto;
+          grid-row: auto;
+        }
+      }
+    }
+  }
+}

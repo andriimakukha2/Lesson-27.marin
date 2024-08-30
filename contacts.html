@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Контакти</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<form class="contacts center">
+  <h1 class="contacts__title">
+    Записаться на прием
+  </h1>
+  <fieldset class="contacts__form">
+    <label class="field">
+      <input class="field__input" name="name" required type="text">
+      <span class="field__placeholder">
+          Ваше имя *
+        </span>
+      <span class="field__error">
+          Поле заповнено некорректно
+        </span>
+    </label>
+    <label class="field">
+      <input class="field__input" name="phone" required type="tel">
+      <span class="field__placeholder">
+          Ваш телефон *
+        </span>
+      <span class="field__error">
+          Поле заповнено некорректно
+        </span>
+    </label>
+    <label class="field field--select">
+      <select class="field__input" name="theme" required>
+        <option disabled selected value="">
+          Тема встречи *
+        </option>
+
+        <option value="theme-1">
+          Тема встречи #1
+        </option>
+        <option value="theme-2">
+          Тема встречи #2
+        </option>
+        <option value="theme-3">
+          Тема встречи #3
+        </option>
+      </select>
+
+      <span class="field__error">
+          Поле заповнено некорректно
+        </span>
+    </label>
+    <label class="field field--textarea field--big">
+      <textarea class="field__input" name="phone" type="tel"></textarea>
+      <span class="field__placeholder">
+          Пожелания
+        </span>
+      <span class="field__error">
+          Поле заповнено некорректно
+        </span>
+    </label>
+  </fieldset>
+
+  <label class="checkbox">
+    <input class="checkbox__input visually-hidden" name="policy" required type="checkbox">
+    <span class="checkbox__label">
+        Я согласен с <a href="#">политикой конфиденциальности</a>
+      </span>
+  </label>
+
+  <button class="btn">
+    Отправить
+  </button>
+</form>
+<section class="center faq">
+  <h2 class="faq__title">
+    Частые вопросы
+  </h2>
+
+  <div class="faq__wrap">
+    <details class="faq__item">
+      <summary class="faq__label">
+        <svg class="faq__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.9146 8.6046H11.3953V1.08527C11.3953 0.742732 10.9302 0 9.99999 0C9.06977 0 8.60463 0.742772 8.60463 1.08527V8.60464H1.0853C0.742803 8.6046 3.05176e-05 9.06973 3.05176e-05 9.99992C3.05176e-05 10.9301 0.742803 11.3953 1.0853 11.3953H8.60467V18.9146C8.60467 19.2571 9.06977 19.9999 10 19.9999C10.9303 19.9999 11.3954 19.2571 11.3954 18.9146V11.3953H18.9148C19.2572 11.3953 20 10.9302 20 9.99992C20 9.06965 19.2571 8.6046 18.9146 8.6046Z" />
+        </svg>
+        <span class="faq__label-text">
+          Какой у вас график работы?
+        </span>
+      </summary>
+    </details>
+    <div class="faq__content">
+      Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00. Записаться на прием можно в любой день с 9:00 до 21:00
+    </div>
+
+    <details class="faq__item">
+      <summary class="faq__label">
+        <svg class="faq__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.9146 8.6046H11.3953V1.08527C11.3953 0.742732 10.9302 0 9.99999 0C9.06977 0 8.60463 0.742772 8.60463 1.08527V8.60464H1.0853C0.742803 8.6046 3.05176e-05 9.06973 3.05176e-05 9.99992C3.05176e-05 10.9301 0.742803 11.3953 1.0853 11.3953H8.60467V18.9146C8.60467 19.2571 9.06977 19.9999 10 19.9999C10.9303 19.9999 11.3954 19.2571 11.3954 18.9146V11.3953H18.9148C19.2572 11.3953 20 10.9302 20 9.99992C20 9.06965 19.2571 8.6046 18.9146 8.6046Z" />
+        </svg>
+        <span class="faq__label-text">
+          Какой у вас график работы?
+        </span>
+      </summary>
+    </details>
+    <div class="faq__content">
+      Я работаю провожу консультации с понедельника по субботу с 15:00 до 21:00. Записаться на прием можно в любой день с 9:00 до 21:00
+    </div>
+  </div>
+</section>
+<section class="center map">
+  <iframe allowfullscreen=""
+          class="map__frame"
+          height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d387215.4960210214!2d30.832065989619682!3d50.38867590532861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sro!4v1720720897843!5m2!1suk!2sro" style="border:0;"
+          width="600"></iframe>
+  <div class="map__content">
+    <h2 class="map__title">
+      Контакты
+    </h2>
+
+    <address class="map__contacts">
+      <ul class="map__list">
+        <li class="map__item">
+          <a class="map__link" href="tel:+380991234567">
+            Тел: +380 99 123 45 67
+          </a>
+        </li>
+        <li class="map__item">
+          <a class="map__link" href="mailto:phyholog_sergei@gmail.com">
+            E-mail: phyholog_sergei@gmail.com
+          </a>
+        </li>
+        <li class="map__item">
+          <a class="map__link" href="https://maps.app.goo.gl/KK3vn9HG3zQBBncu5" target="_blank">
+            Адрес: Ул. Центральная д. 10, офис 1
+          </a>
+        </li>
+        <li class="map__item">
+          <a class="map__link" href="https://t.me/vladpovelitsa" target="_blank">
+            telegram
+          </a>
+        </li>
+      </ul>
+    </address>
+  </div>
+</section>
+<form class="contacts center">
+  <h2 class="contacts__title">
+    Записаться со скидкой 50 грн
+  </h2>
+  <fieldset class="contacts__form contacts__form--sale">
+    <label class="field">
+      <input class="field__input" name="name" required type="text">
+      <span class="field__placeholder">
+          Ваше имя *
+        </span>
+      <span class="field__error">
+          Поле заповнено некорректно
+        </span>
+    </label>
+    <label class="field">
+      <input class="field__input" name="phone" required type="tel">
+      <span class="field__placeholder">
+          Ваш телефон *
+        </span>
+      <span class="field__error">
+          Поле заповнено некорректно
+        </span>
+    </label>
+    <button class="btn">
+      Отправить
+    </button>
+  </fieldset>
+
+  <label class="checkbox">
+    <input class="checkbox__input visually-hidden" name="policy" required type="checkbox">
+    <span class="checkbox__label">
+        Я согласен с <a href="#">политикой конфиденциальности</a>
+      </span>
+  </label>
+</form>
+
+
+<footer class="footer center">
+  <a class="logo" href="#">
+    <img alt="Валентин Марин" src="img/logo.png" width="200">
+  </a>
+
+  <ul class="social">
+    <li class="social__item"><a class="social__link" href="#" target="_blank">
+     <svg class="social__icon">
+       <use href="img/social/social-sprite.svg#instagram"></use>
+     </svg> @phyholog_sergei
+    </a></li>
+    <li class="social__item"><a class="social__link" href="#" target="_blank">
+      <svg class="social__icon">
+        <use href="img/social/social-sprite.svg#viber"></use>
+      </svg>
+      +380 99 123 45 67
+    </a></li>
+    <li class="social__item"><a class="social__link" href="#" target="_blank">
+      <svg class="social__icon">
+        <use href="img/social/social-sprite.svg#telegram"></use>
+      </svg>
+      @phyholog_sergei
+    </a></li>
+    <li class="social__item"><a class="social__link" href="#" target="_blank">
+      <svg class="social__icon" >
+        <use width="20" height="20" href="img/social/social-sprite.svg#phone"></use>
+      </svg>
+      +380 99 123 45 67
+    </a></li>
+  </ul>
+</footer>
+
+</body>
+</html>

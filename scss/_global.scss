@@ -1,0 +1,48 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+.center {
+  padding: 0 calc(50vw - 585px);
+
+  @media screen and (max-width: 1250px) {
+    padding-left: calc(50vw - 500px);
+    padding-right: calc(50vw - 500px);
+  }
+  @media screen and (max-width: 1050px) {
+    padding-left: calc(50vw - 400px);
+    padding-right: calc(50vw - 400px);
+  }
+  @media screen and (max-width: 850px) {
+    padding-left: calc(50vw - 360px);
+    padding-right: calc(50vw - 360px);
+  }
+  @media screen and (max-width: 750px) {
+    padding-left: calc(50vw - 300px);
+    padding-right: calc(50vw - 300px);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

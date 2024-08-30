@@ -1,0 +1,22 @@
+.map {
+  position: relative;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  &__frame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    background: var(--color-light);
+    max-width: 477px;
+    margin-left: auto;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+}

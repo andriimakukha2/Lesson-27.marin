@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Marin</title>
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+      .offer {
+          background: url("img/offer-bg.webp") center top/cover no-repeat #989892
+      }
+  </style>
+</head>
+<body>
+<header class="center header" id="header">
+  <a class="logo" href="#">
+    <img alt="Валентин Марин" src="img/logo.png" width="200">
+  </a>
+  <nav class="nav">
+    <input class="visually-hidden" id="nav-checkbox" type="checkbox">
+
+    <ul class="nav__list">
+      <li class="nav__item"><a class="nav__link --active "
+                               href="#">Главная</a></li>
+      <li class="nav__item"><a class="nav__link " href="#about">Обо мне</a>
+      </li>
+      <li class="nav__item"><a class="nav__link " href="#">Запись</a></li>
+      <li class="nav__item"><a class="nav__link " href="#">Отзывы</a></li>
+      <li class="nav__item"><a class="nav__link " href="#">Статьи</a></li>
+      <li class="nav__item"><a class="nav__link " href="#">FAQ</a></li>
+    </ul>
+
+    <label class="nav__toggler" for="nav-checkbox">
+      <span class="nav__toggler-line"></span><span class="nav__toggler-line"></span><span
+        class="nav__toggler-line"></span>
+    </label>
+  </nav>
+
+</header>
+<main>
+  <section class="offer center ">
+
+    <h1 class="offer__title">
+      Ваш личный психолог
+      В Кривом Роге
+    </h1>
+    <p class="offer__desc ">
+      Личные, семейные и
+      групповые консультаци
+    </p>
+    <a class="btn btn-primary w-100" href="#about">
+      УЗНАТЬ БОЛЬШЕ
+    </a>
+  </section>
+
+  <section class="running-row" id="row">
+    <div class="running-row__inner">
+      <p>
+        1231723 14812y3912 3123
+      </p>
+      <p>
+        Lorem ipsum
+      </p>
+    </div>
+  </section>
+  
+  <span id="header-anchor"></span>
+
+  <section class="services center">
+    <article class="services__item">
+      <svg class="services__icon" height="56" width="56">
+        <use xlink:href="img/services-sprite.svg#goal"></use>
+      </svg>
+      <h2 class="services__name">Личные консультации</h2>
+      <p class="services__desc">Достижения поставленных целей
+        бывает сложной задачей, но при правильной поддержке нет ничего не возможного</p>
+    </article>
+    <article class="services__item ">
+      <svg class="services__icon" height="56" width="56">
+        <use xlink:href="img/services-sprite.svg#family-room"></use>
+      </svg>
+      <h2 class="services__name ">Семейная терапия</h2>
+      <p class="services__desc">У любой семьи бывают кризисные ситуации, поэтому в такие моменты важно поддерживать
+        друг
+        друга</p>
+    </article>
+    <article class="services__item">
+
+      <svg class="services__icon" height="56" width="56">
+        <use xlink:href="img/services-sprite.svg#network"></use>
+      </svg>
+      <h2 class="services__name">Сенситивные группы</h2>
+      <p class="services__desc">Групповые занятия — отличное место, чтобы научиться общаться с окружающими людьми и
+        раскрыть свой потенциал</p>
+    </article>
+  </section>
+
+  <!--TODO: add slider here-->
+  <div class="slider">
+    <div class="slides">
+      <div class="slide active">
+        <img src="img/slider/1.png" alt="Photo 1">
+      </div>
+      <div class="slide">
+        <img src="img/slider/2.png" alt="Photo 2">
+      </div>
+      <div class="slide">
+        <img src="img/slider/3.png" alt="Photo 3">
+      </div>
+      <div class="slide">
+        <img src="img/slider/4.png" alt="Photo 4">
+      </div>
+      <div class="slide">
+        <img src="img/slider/5.png" alt="Photo 5">
+      </div>
+    </div>
+    <button class="control prev">❮</button>
+    <button class="control next">❯</button>
+    <div class="indicators">
+      <span class="indicator active" data-slide="0"></span>
+      <span class="indicator" data-slide="1"></span>
+      <span class="indicator" data-slide="2"></span>
+      <span class="indicator" data-slide="3"></span>
+    </div>
+    <button class="pause-play">⏸</button>
+  </div>
+
+  <section class="faq center" id="faq">
+      <h2 class="faq__title">
+        Частые вопросы
+      </h2>
+
+      <div class="faq__list" id="list-one">
+        <div data-dropdown-item class="faq__item">
+          <h2 class="faq__question">
+            <button class="faq__label">
+              Title #1
+            </button>
+          </h2>
+          <div class="faq__answer" data-dropdown-wrapper>
+            <div class="faq__answer-content"  data-dropdown-content>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet excepturi officiis perferendis reprehenderit temporibus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, soluta?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At maxime molestias officia veritatis vitae? Dicta incidunt inventore ipsam ratione repellat sit. Aut quaerat quibusdam rem?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div data-dropdown-item class="faq__item">
+          <h2 class="faq__question">
+            <button class="faq__label">
+              Title #2
+            </button>
+          </h2>
+          <div class="faq__answer" data-dropdown-wrapper>
+            <div class="faq__answer-content" data-dropdown-content>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet excepturi officiis perferendis reprehenderit temporibus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, soluta?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div data-dropdown-item class="faq__item">
+          <h2 class="faq__question">
+            <button class="faq__label">
+              Title #3
+            </button>
+          </h2>
+          <div class="faq__answer" data-dropdown-wrapper>
+            <div class="faq__answer-content" data-dropdown-content>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet excepturi officiis perferendis reprehenderit temporibus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, soluta?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="faq__list" id="list-two">
+        <div class="faq__item" data-dropdown-item>
+          <h2 class="faq__question">
+            <button class="faq__label">
+              Title #1
+            </button>
+          </h2>
+          <div class="faq__answer" data-dropdown-wrapper>
+            <div class="faq__answer-content"  data-dropdown-content>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet excepturi officiis perferendis reprehenderit temporibus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, soluta?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item" data-dropdown-item>
+          <h2 class="faq__question">
+            <button class="faq__label">
+              Title #2
+            </button>
+          </h2>
+          <div class="faq__answer" data-dropdown-wrapper>
+            <div class="faq__answer-content" data-dropdown-content>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet excepturi officiis perferendis reprehenderit temporibus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, soluta?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faq__item" data-dropdown-item>
+          <h2 class="faq__question">
+            <button class="faq__label">
+              Title #3
+            </button>
+          </h2>
+          <div class="faq__answer" data-dropdown-wrapper>
+            <div class="faq__answer-content"  data-dropdown-content>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet excepturi officiis perferendis reprehenderit temporibus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, soluta?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <iframe
+      allowfullscreen=""
+      height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325895.2049234173!2d30.34109644417202!3d50.34685549972486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsINCj0LrRgNCw0ZfQvdCwLCAwMjAwMA!5e0!3m2!1suk!2sro!4v1720715278173!5m2!1suk!2sro"
+      style="border:0;"
+      width="600"></iframe>
+
+  <select id="" name="">
+    <option value="1">option 1</option>
+    <option value="1">option 2</option>
+    <option value="1">option 3</option>
+    <option value="1">option 4</option>
+    <option value="1">option 5</option>
+  </select>
+
+</main>
+
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #fff;
+  font-weight: 500;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .3s;
+    &:hover {
+      color: var(--color-light);
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
+
+  @media screen and (max-width: 1250px) {
+    &__item {
+      width: 40%;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    &__item {
+      width:auto;
+    }
+  }
+}
